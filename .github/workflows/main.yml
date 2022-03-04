@@ -40,7 +40,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: ngcobalt387.manitu.net
-          port: 23
+          protocol: ftps
           username: ftp200017650
           password: ${{ secrets.ftp_password }}
           local-dir: ./public/
