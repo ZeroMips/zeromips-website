@@ -5,4 +5,4 @@ description: "Adventures with a processor that is from the 70s. Just like me."
 ---
 Welcome to ZeroMips.
 
-{{< image src="images/cover.jpg">}}
+{{< image src="images/cover.jpg" style="border-radius: 8px;>}}
