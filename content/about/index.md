@@ -10,9 +10,9 @@ an inenxpensive but still powerful microprocessor. The 6502 and its derivates li
 6510 were adopted in many of the early homecomputers: the Apple I and II, the
 Commodore PET, VC20 and the famous C64.
 
-My first computer, the Commodore C116 was also powered by this design.
+My first computer, the Commodore C116 was also powered by this design, more specifically the 7501/8501 flavour.
 
-The 65C02 is still in production today. Ben Eater started a
+The 65C02 is still in [production](https://www.westerndesigncenter.com/wdc/w65c02s-chip.php) today. Ben Eater started a
 [video series](https://eater.net/6502)
 that explained how to build a complete system including RAM, ROM and IOs on
 breadboards. I found this fascinating and decided to give it a try myself.
