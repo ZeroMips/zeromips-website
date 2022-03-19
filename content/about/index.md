@@ -6,7 +6,7 @@ menu:
 ---
 
 It all started in the 70s. Chuck Peddle and his team at MOS Technology developed
-an inenxpensive but still powerful microprocessor. The 6502 and its derivates like the
+an inexpensive but still powerful microprocessor. The 6502 and its derivates like the
 6510 were adopted in many of the early homecomputers: the Apple I and II, the
 Commodore PET, VC20 and the famous C64.
 
