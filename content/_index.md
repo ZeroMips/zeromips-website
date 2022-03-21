@@ -2,6 +2,6 @@
 title: "ZeroMips: a journey to the past"
 description: "Adventures with a processor that is from the 70s. Just like me."
 ---
-Welcome to ZeroMips.
+Adventures with a processor that is from the 70s. Just like me
 
 {{< image src="/img/cover.jpg" style="border-radius: 8px;" >}}
