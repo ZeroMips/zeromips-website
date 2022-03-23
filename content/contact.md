@@ -8,3 +8,5 @@ menu: main
 ---
 
 info@zeromips.org
+
+Discord: https://discord.gg/X7QkafDjcY
