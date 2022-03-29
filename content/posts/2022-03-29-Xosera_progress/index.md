@@ -1,7 +1,7 @@
 ---
 title: "Xosera progress"
 date: "2022-03-29"
-cover: "success.jpg"
+cover: "cover.jpg"
 ---
 
 Since Xosera is basically working, I wanted to see what I could achieve with it.

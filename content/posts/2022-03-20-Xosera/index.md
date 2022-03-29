@@ -1,7 +1,7 @@
 ---
 title: "The Xosera project"
 date: "2022-03-20"
-cover: "success.jpg"
+cover: "cover.jpg"
 ---
 
 The Ben Eater 6502 kit comes with a two line LCD character display. This is very
