@@ -1,7 +1,7 @@
 ---
 title: "The Xosera project"
 date: "2022-03-20"
-cover: "img/xosera/success.jpg"
+cover: "success.jpg"
 ---
 
 The Ben Eater 6502 kit comes with a two line LCD character display. This is very
@@ -29,25 +29,25 @@ U2 is a PAL used as a simple chip select decoder. Sources can be found in the
 IC4 on the Xosera needs a different configuration which is also included.
 
 When you power up the Xosera board, you should get a grey screen in 640x480.
-![grey screen](/img/xosera/grey-screen.jpg)
+{{< imgproc grey-screen Resize "1000x" "grey screen" />}}
 
 In the beginning I had the problem, that IC5 got quite warm. This was due to
 a RGB LED connected to the FPGA pins that sunk their current into the poor thing.
 Fortunately there is a jumper trace on the FPGA board that can be cut to
 disable the LED. That worked nicely.
-![verify cut](/img/xosera/verify-cut.jpg)
+{{< imgproc verify-cut Resize "1000x" "verify cutting trace was succesful" />}}
 
 To match the bus timing I had some logic analyzer fun.
-![logic analyzer](/img/xosera/analyzer.jpg)
+{{< imgproc analyzer Resize "1000x" "logic analyzer fun" />}}
 
 Fortunately the board has debug connectors to attach the logic probes.
-![logic probes](/img/xosera/probing.jpg)
+{{< imgproc probing Resize "1000x" "logic probes" />}}
 
 After all the timing looks pretty neat.
-![timing](/img/xosera/scrprint.png)
+{{< imgproc scrprint Resize "2000x" "timing looks neat" />}}
 
 After writing a small assembly program, I got this output:
-![three blanks](/img/xosera/partial-success.jpg)
+{{< imgproc partial-success Resize "1000x" "not quite there" />}}
 
 I was hoping to see the characters 'ABC' in the upper right corner instead,
 so something was still wrong. It needed some more sleep on my side to find that
