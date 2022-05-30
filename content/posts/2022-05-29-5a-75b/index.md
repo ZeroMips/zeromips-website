@@ -9,7 +9,7 @@ more, so I had the idea to use a FPGA for providing some peripherals to the 6502
 Obviously that is what the Xosera board is already doing for graphics.
 But it would be nice, to also have PS/2 keyboard and mouse and an SD card interface.
 
-So I came accross the Colorlight 5a-75b board, which is meant for controlling LED
+So I came across the Colorlight 5a-75b board, which is meant for controlling LED
 lines (as far as my understanding goes). The cool part is, that it features a
 Lattice ECP5 FPGA which is quite beefy and lots of the pins are routed to
 connectors on the board. As a bonus there is also SDRAM and gigabit ethernet
@@ -18,9 +18,9 @@ some projects using the opensource FPGA tools supporting this board. And there
 was already lots of [documentation](https://github.com/q3k/chubby75/tree/master/5a-75b)
 available So I quickly ordered one.
 
-Later I found, that the FPGA IOs are connected using unidirectional driver chips.
-So all the connectors were output only. Luckily Claude Schwarz had already found
-a way to replace the driver chips with
+Later I found, that the FPGA IOs are connected using driver chips that are wired
+as output only on the board.
+Luckily Claude Schwarz had already found a way to replace the driver chips with
 [bidirectional ones](https://twitter.com/Claude1079/status/1231194849350647808),
 that could also used for 5V level adaption, since the FPGA IOs are 3.3V max.
 You just have to connect a 1N4007 diode in series to you 5V power supply, so
@@ -38,7 +38,7 @@ As I had all the parts collected and also some free time available, I started
 modding the Colorlight hardware. Half of the IOs should be 5V compatible for
 connecting it to my 6502, the other half should provide PMOD connectivity.
 
-First of all I had to get rid of the 74HC245T level shifters. I found this video
+First of all I had to get rid of the 74HC245T levelshifters. I found this video
 very inspiring:
 {{< youtube CVsmwFAkf7I >}}
 
@@ -50,13 +50,12 @@ I hope you are not offended by my SMD soldering skills. For me this is a project
 where I can practise. I hope I can encourage some people to give it a try too.
 If I can do it, anybody can.
 
-So this method basically worked. But it took ages. Since I do not need 74HC245Ts
+So this method basically worked. But it took ages. Since I do not need the 74HC245Ts
 anymore, I decided to try cutting the pins with an exacto knife, which works
 surprisingly well.
 {{< youtube T58vn-xocHw >}}
 
-
-After that you only have to remove the remaining pins by collecting whem with
+After that you only have to remove the remaining pins by collecting them with
 the tip of the soldering iron.
 {{< youtube O7se4k1cuYE >}}
 
@@ -65,14 +64,14 @@ apply some tin to the pads before laying them on the board. Then it goes
 smoothly.
 {{< youtube Zl-IGA6Ifec >}}
 
-Soldering the SN74CBT3245APW was a liitle more challenging and I had to verify
+Soldering the SN74CBT3245APW was a little more challenging and I had to verify
 that each pin was soldered properly.
 {{< youtube TfkhNkY-EOI >}}
 
 I am quite pleased with the result:
 {{< imgproc finalboard Resize "1000x" "Finally..." />}}
 
-So at point I needed some help to get the GPIOs tested using Verilog code.
+So at that point I needed some help to get the GPIOs tested using Verilog code.
 Luckily Xark gave me some help on the Zeromips discord channel. He wrote
 a [gpio tester](https://github.com/XarkLabs/upduino-gpiotest) for the UPduino
 board which is used for Xosera. I could [adapt](https://github.com/ZeroMips/Colorlight-5A-75B-gpiotest)
