@@ -29,7 +29,7 @@ two in the process. Next I wanted to know, what voltage I needed to light them u
 So I connected one to my Lab supply, and at 60V it finally started glowing.
 Since I want to supply the board from a 1.5V battery (and it should still work
 when the voltage is falling), I considered the circuit options. A standard boost
-converter would probably not work very well here. The input voltage is too for
+converter would probably not work very well here. The input voltage is too low for
 most ICs I saw. But I found another circuit I had not heard of before. It is called
 a "Joule thief" because it can suck most of the energy from a battery, even when
 the voltage gets low. It is a simple transistor circuit, that uses an inductor for
